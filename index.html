@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Student Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#details">Details</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I am <span id="studentName">Jegatheesh</span>, a 2nd year student at SNMV College pursuing 
+    <strong>B.Sc Computer Science</strong>. This portfolio showcases my details and skills.</p>
+  </section>
+
+  <!-- Student Details -->
+  <section id="details">
+    <h2>Student Details</h2>
+    <div class="card">
+      <p><strong>Name:</strong> <span id="name">Jegatheesh</span></p>
+      <p><strong>Year:</strong> <span id="year">2nd Year</span></p>
+      <p><strong>Course:</strong> <span id="course">B.Sc Computer Science</span></p>
+      <p><strong>College:</strong> <span id="college">SNMV College</span></p>
+      <p><strong>Skills:</strong> <span id="skills">HTML, CSS, JavaScript</span></p>
+    </div>
+    <button onclick="updateDetails()">Update Details</button>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <form onsubmit="return validateForm()">
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" required></textarea>
+      
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Student Portfolio | Designed by Jegatheesh</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+  </html>
